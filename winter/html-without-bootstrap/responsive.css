@@ -1,0 +1,228 @@
+/* ================================
+   Responsive Styles
+   Separate breakpoints for Laptop, Tablet, Mobile
+   ================================ */
+
+/* ================================
+   LAPTOP (max-width: 1200px)
+   ================================ */
+@media screen and (max-width: 1200px) {
+    .container {
+        padding: 0 40px;
+    }
+    
+    .hero-content h1 {
+        font-size: 4rem;
+    }
+    
+    .gallery-grid {
+        column-count: 3;
+        column-gap: 15px;
+    }
+    
+    .about-content {
+        gap: 40px;
+    }
+}
+
+/* ================================
+   TABLET (max-width: 991px)
+   ================================ */
+@media screen and (max-width: 991px) {
+    /* Navigation */
+    .nav-desktop {
+        display: none;
+    }
+    
+    .hamburger {
+        display: flex;
+    }
+    
+    /* Hero */
+    .hero {
+        min-height: 60vh;
+        padding: 100px 20px 60px;
+    }
+    
+    .hero-content h1 {
+        font-size: 3.5rem;
+    }
+    
+    .hero-content p {
+        font-size: 0.75rem;
+        letter-spacing: 3px;
+    }
+    
+    /* Gallery */
+    .gallery-grid {
+        column-count: 2;
+    }
+    
+    .gallery-filter {
+        gap: 15px;
+    }
+    
+    .filter-btn {
+        font-size: 0.75rem;
+    }
+    
+    /* About */
+    .about {
+        padding: 80px 0;
+    }
+    
+    .about h2 {
+        font-size: 2.5rem;
+        margin-bottom: 40px;
+    }
+    
+    .about-content {
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .about-text {
+        order: 2;
+    }
+    
+    .about-image {
+        order: 1;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    
+    /* Contact */
+    .contact {
+        padding: 80px 0;
+    }
+    
+    .contact h2 {
+        font-size: 2.5rem;
+    }
+    
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+}
+
+/* ================================
+   MOBILE (max-width: 767px)
+   ================================ */
+@media screen and (max-width: 767px) {
+    body {
+        font-size: 14px;
+    }
+    
+    .container {
+        padding: 0 20px;
+    }
+    
+    /* Header */
+    .header {
+        padding: 20px 0;
+    }
+    
+    .logo {
+        font-size: 1.2rem;
+    }
+    
+    /* Hero */
+    .hero {
+        min-height: 50vh;
+        padding: 80px 15px 40px;
+    }
+    
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-content p {
+        font-size: 0.7rem;
+        letter-spacing: 2px;
+    }
+    
+    /* Gallery */
+    .gallery {
+        padding: 40px 0;
+    }
+    
+    .gallery-filter {
+        gap: 10px;
+        margin-bottom: 30px;
+    }
+    
+    .filter-btn {
+        font-size: 0.7rem;
+        padding: 8px 12px;
+    }
+    
+    .gallery-grid {
+        column-count: 1;
+    }
+    
+    .gallery-item {
+        margin-bottom: 15px;
+    }
+    
+    /* About */
+    .about {
+        padding: 60px 0;
+    }
+    
+    .about h2 {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+    
+    .about-text p {
+        text-align: left;
+        margin-bottom: 20px;
+    }
+    
+    /* Contact */
+    .contact {
+        padding: 60px 0;
+    }
+    
+    .contact h2 {
+        font-size: 2rem;
+    }
+    
+    .contact-subtitle {
+        font-size: 0.85rem;
+        margin-bottom: 30px;
+    }
+    
+    .contact-info {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .btn-submit {
+        padding: 15px 30px;
+    }
+    
+    /* Footer */
+    .footer {
+        padding: 25px 0;
+    }
+    
+    .footer p {
+        font-size: 0.75rem;
+    }
+}
+
+/* ================================
+   SMALL MOBILE (max-width: 480px)
+   ================================ */
+@media screen and (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    
+    .about h2,
+    .contact h2 {
+        font-size: 1.8rem;
+    }
+}

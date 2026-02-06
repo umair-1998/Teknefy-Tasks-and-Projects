@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Winter Portfolio - Photography Gallery</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header class="header">
+        <div class="container">
+            <a href="#home" class="logo">WINTER</a>
+            <nav class="nav-desktop">
+                <a href="#home">Home</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <nav class="nav-mobile">
+                <a href="#home">Home</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Winter Moments</h1>
+            <p>A Collection of Frozen Beauty</p>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <!-- Gallery Filter -->
+            <div class="gallery-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="landscapes">Landscapes</button>
+                <button class="filter-btn" data-filter="decorations">Decorations</button>
+                <button class="filter-btn" data-filter="food">Food</button>
+                <button class="filter-btn" data-filter="family">Family</button>
+            </div>
+            
+            <!-- Gallery Grid -->
+            <div class="gallery-grid">
+                <div class="gallery-item" data-category="landscapes">
+                    <img src="https://images.pexels.com/photos/311039/pexels-photo-311039.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Mountain Snow">
+                    <div class="gallery-overlay">
+                        <h3>Mountain Snow</h3>
+                        <span>Landscapes</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="decorations">
+                    <img src="https://images.pexels.com/photos/1656564/pexels-photo-1656564.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Winter Berries">
+                    <div class="gallery-overlay">
+                        <h3>Winter Berries</h3>
+                        <span>Decorations</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="food">
+                    <img src="https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Hot Cocoa">
+                    <div class="gallery-overlay">
+                        <h3>Hot Cocoa</h3>
+                        <span>Food</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="landscapes">
+                    <img src="https://images.pexels.com/photos/1624496/pexels-photo-1624496.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Frozen Lake">
+                    <div class="gallery-overlay">
+                        <h3>Frozen Lake</h3>
+                        <span>Landscapes</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="family">
+                    <img src="https://images.pexels.com/photos/3171837/pexels-photo-3171837.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Family Time">
+                    <div class="gallery-overlay">
+                        <h3>Family Time</h3>
+                        <span>Family</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="decorations">
+                    <img src="https://images.pexels.com/photos/1708601/pexels-photo-1708601.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Christmas Tree">
+                    <div class="gallery-overlay">
+                        <h3>Christmas Tree</h3>
+                        <span>Decorations</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="food">
+                    <img src="https://images.pexels.com/photos/1854652/pexels-photo-1854652.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Donuts">
+                    <div class="gallery-overlay">
+                        <h3>Sweet Treats</h3>
+                        <span>Food</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="family">
+                    <img src="https://images.pexels.com/photos/3184183/pexels-photo-3184183.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Campfire">
+                    <div class="gallery-overlay">
+                        <h3>Campfire</h3>
+                        <span>Family</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="family">
+                    <img src="https://images.pexels.com/photos/1620653/pexels-photo-1620653.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Kids Playing">
+                    <div class="gallery-overlay">
+                        <h3>Kids Playing</h3>
+                        <span>Family</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="decorations">
+                    <img src="https://images.pexels.com/photos/1706767/pexels-photo-1706767.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Gift Box">
+                    <div class="gallery-overlay">
+                        <h3>Gift Box</h3>
+                        <span>Decorations</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="landscapes">
+                    <img src="https://images.pexels.com/photos/1632039/pexels-photo-1632039.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Autumn Road">
+                    <div class="gallery-overlay">
+                        <h3>Autumn Road</h3>
+                        <span>Landscapes</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="food">
+                    <img src="https://images.pexels.com/photos/239581/pexels-photo-239581.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Macarons">
+                    <div class="gallery-overlay">
+                        <h3>Macarons</h3>
+                        <span>Food</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Capturing the serene beauty of winter landscapes has been my passion for over a decade. Each photograph tells a story of frozen moments, quiet snowfalls, and the peaceful stillness that blankets the world during the coldest months.</p>
+                    <p>From the majestic mountain peaks covered in pristine snow to intimate family moments wrapped in winter warmth, my work celebrates the unique beauty that this season brings. Through my lens, I aim to preserve the fleeting magic of winter—the way light dances on ice crystals, the cozy comfort of holiday gatherings, and the breathtaking landscapes transformed by snow.</p>
+                    <p>My photography has been featured in various publications and exhibitions, and I continue to explore new ways to capture the essence of winter's wonder.</p>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.pexels.com/photos/1579708/pexels-photo-1579708.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Artist Paint Palette">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <p class="contact-subtitle">Let's work together to capture your winter moments</p>
+            
+            <form class="contact-form">
+                <div class="form-row">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                </div>
+                <textarea name="message" placeholder="Message" rows="5" required></textarea>
+                <button type="submit" class="btn-submit">Send Message</button>
+            </form>
+            
+            <div class="contact-info">
+                <a href="mailto:hello@winterportfolio.com">hello@winterportfolio.com</a>
+                <a href="tel:+15551234567">+1 (555) 123-4567</a>
+                <span>Colorado, USA</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Winter Portfolio &bull; Designed by <a href="https://www.tooplate.com" target="_blank">Tooplate</a></p>
+    </footer>
+
+    <script>
+        // Hamburger menu toggle
+        document.getElementById('hamburger').addEventListener('click', function() {
+            document.querySelector('.nav-mobile').classList.toggle('active');
+            this.classList.toggle('active');
+        });
+
+        // Gallery filter
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                
+                const filter = btn.dataset.filter;
+                
+                galleryItems.forEach(item => {
+                    if (filter === 'all' || item.dataset.category === filter) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

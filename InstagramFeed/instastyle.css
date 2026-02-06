@@ -1,0 +1,173 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: system-ui, sans-serif;
+}
+
+body {
+  background: #ececec;
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+.wrapper {
+  display: flex;
+  gap: 28px;
+}
+
+.phone {
+  width: 270px;
+  height: 560px;
+  background: #fff;
+  border-radius: 28px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+/* TOP BAR */
+.topbar {
+  height: 44px;
+  background: #f6f6f6;
+}
+
+/* PROFILE */
+.profile {
+  display: flex;
+  padding: 14px;
+  gap: 14px;
+}
+
+.avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: linear-gradient(135deg,#ff9a9e,#fad0c4);
+}
+
+.stats {
+  display: flex;
+  gap: 14px;
+}
+
+.stats div {
+  text-align: center;
+  font-size: 11px;
+}
+
+.stats b {
+  display: block;
+  font-size: 13px;
+}
+
+/* PROFILE ACTIONS */
+.profile-actions {
+  display: flex;
+  gap: 8px;
+  padding: 0 14px 10px;
+}
+
+.profile-actions button {
+  flex: 1;
+  height: 28px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  background: #fafafa;
+  font-size: 12px;
+}
+
+.profile-actions .primary {
+  background: #3897f0;
+  color: #fff;
+  border: none;
+}
+
+.profile-actions .icon {
+  flex: 0.6;
+}
+
+/* STORIES */
+.stories {
+  display: flex;
+  gap: 10px;
+  padding: 10px 14px;
+}
+
+.story {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background: linear-gradient(135deg,#fbc2eb,#a6c1ee);
+}
+
+/* GRID */
+.grid, .explore {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3px;
+  padding: 3px;
+  flex: 1;
+}
+
+.grid div, .explore div {
+  background: linear-gradient(135deg,#ff9a9e,#fad0c4);
+}
+
+/* POST */
+.post {
+  height: 260px;
+  margin: 0 14px;
+  border-radius: 10px;
+  background: linear-gradient(135deg,#ff9a9e,#fad0c4);
+}
+
+/* POST ACTIONS */
+.post-actions {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 14px;
+}
+
+.post-actions .left {
+  display: flex;
+  gap: 12px;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  background: #ccc;
+  border-radius: 50%;
+}
+
+/* SEARCH */
+.search {
+  padding: 10px 14px;
+}
+
+.search-box {
+  height: 32px;
+  background: #eee;
+  border-radius: 8px;
+}
+
+/* BOTTOM NAV */
+.bottom-nav {
+  height: 48px;
+  background: #f6f6f6;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.bottom-nav span {
+  width: 22px;
+  height: 22px;
+  background: #ccc;
+  border-radius: 50%;
+}

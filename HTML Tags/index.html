@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Basic HTML Website</title>
+
+    <!-- ===== BASIC CSS ===== -->
+    <style>
+
+       
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        p {
+            color: #333;
+        }
+
+        
+        #main-title {
+            color: darkblue;
+            text-align: center;
+        }
+
+        /* CLASS SELECTOR */
+        .box {
+            border: 2px solid black;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        /* FLEXBOX */
+        .flex-container {
+            display: flex;
+            gap: 20px;
+            margin-top: 10px;
+        }
+
+        .flex-item {
+            border: 2px solid green;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<!-- 1. h1 tag -->
+<h1 id="main-title">h1 tag – Used for main heading (Block)</h1>
+
+<!-- 2. h2 tag -->
+<h2>h2 tag – Used for sub heading (Block)</h2>
+
+<!-- 3. h3 tag -->
+<h3>h3 tag – Smaller heading (Block)</h3>
+
+<!-- 4. p tag -->
+<p>p tag – Used to write paragraphs (Block)</p>
+
+<!-- 5. br tag -->
+<p>This line uses br tag <br> to break the line (Inline)</p>
+
+<!-- 6. hr tag -->
+<hr>
+<p>hr tag – Creates a horizontal line (Block)</p>
+
+<!-- 7. b tag -->
+<p><b>b tag – Makes text bold (Inline)</b></p>
+
+<!-- 8. i tag -->
+<p><i>i tag – Makes text italic (Inline)</i></p>
+
+<!-- 9. u tag -->
+<p><u>u tag – Underlines text (Inline)</u></p>
+
+<!-- 10. strong tag -->
+<p><strong>strong tag – Important bold text (Inline)</strong></p>
+
+<!-- 11. em tag -->
+<p><em>em tag – Emphasized text (Inline)</em></p>
+
+<!-- 12. a tag -->
+<a href="https://www.google.com">a tag – Creates a link (Inline)</a>
+
+<br><br>
+
+<!-- 13. img tag -->
+<img src="outdoor.jpg" alt="Sample Image">
+
+<p>img tag – Displays image (Inline)</p>
+
+<!-- 14. div tag with class -->
+<div class="box">
+    div tag – Used as a container (Block)
+</div>
+
+<!-- 15. span tag -->
+<p><span>span tag – Inline container</span></p>
+
+<!-- 16. ul tag -->
+<ul class="box">
+    <li>ul tag – Unordered list</li>
+    <li>ul tag – Unordered list</li>
+    <li>ul tag – Unordered list</li>
+</ul>
+
+<!-- 17. ol tag -->
+<ol class="box">
+    <li>ol tag – Ordered list</li>
+    <li>ol tag – Ordered list</li>
+</ol>
+
+<!-- 18. li tag -->
+<ul>
+    <li>li tag – List item (Block)</li>
+</ul>
+
+<!-- 19. table tag -->
+<table border="2" class="box">
+    <tr>
+        <th>Name</th>
+        <th>Age</th>
+    </tr>
+    <tr>
+        <td>Umair</td>
+        <td>27</td>
+    </tr>
+</table>
+
+<!-- 23. form tag -->
+<form class="box">
+    <label>label tag – Label for input</label><br><br>
+    <input type="text" placeholder="input tag – Text field"><br><br>
+    <button>button tag – Click button</button>
+</form>
+
+<!-- 27. textarea tag -->
+<textarea class="box">textarea tag – Multi-line text box</textarea>
+
+<!-- 28. select tag -->
+<select class="box">
+    <option>Option 1</option>
+    <option>Option 2</option>
+</select>
+
+<!-- ===== FLEXBOX EXAMPLE ===== -->
+<h3>Flexbox Example</h3>
+
+<div class="flex-container">
+    <div class="flex-item">Flex Item 1</div>
+    <div class="flex-item">Flex Item 2</div>
+    <div class="flex-item">Flex Item 3</div>
+</div>
+
+<!-- 30. header tag -->
+<header class="box">header tag – Top section of page</header>
+
+<!-- 32. nav tag -->
+<nav class="box">nav tag – Navigation menu</nav>
+
+<!-- 33. section tag -->
+<section class="box">section tag – Section of page</section>
+
+<!-- 34. article tag -->
+<article class="box">article tag – Independent content</article>
+
+<!-- 35. main tag -->
+<main class="box">main tag – Main content of page</main>
+
+<!-- 31. footer tag -->
+<footer class="box">footer tag – Bottom section of page</footer>
+
+</body>
+</html>

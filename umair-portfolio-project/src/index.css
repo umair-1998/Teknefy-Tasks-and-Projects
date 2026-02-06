@@ -1,0 +1,253 @@
+:root {
+  --bg-body: #05000a; /* Ultra dark violet black */
+  --bg-card: rgba(20, 10, 30, 0.4);
+  --bg-card-hover: rgba(40, 20, 60, 0.6);
+  
+  /* Sexy Gradient: Purple -> Pink -> Orange */
+  --primary-gradient: linear-gradient(135deg, #d946ef 0%, #f43f5e 50%, #fbbf24 100%);
+  --secondary-gradient: linear-gradient(to right, #a855f7, #ec4899);
+  
+  --text-primary: #ffffff;
+  --text-secondary: #e9d5ff; /* Pale lilac */
+  --accent-color: #f472b6;
+  
+  --font-heading: 'Outfit', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --glass-border: 1px solid rgba(255, 255, 255, 0.08);
+  --glass-shadow: 0 8px 32px 0 rgba(219, 39, 119, 0.15); /* Pinkish glow */
+}
+
+body {
+  background-color: var(--bg-body);
+  /* Subtle ambient glow */
+  background-image: 
+    radial-gradient(circle at 10% 20%, rgba(217, 70, 239, 0.08) 0%, transparent 40%),
+    radial-gradient(circle at 90% 80%, rgba(244, 63, 94, 0.08) 0%, transparent 40%);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  line-height: 1.7;
+  font-weight: 300; /* Thin body text */
+}
+
+/* Thin Elegant Typography */
+h1, h2, h3, h4, h5, h6, .navbar-brand {
+  font-family: var(--font-heading);
+  color: var(--text-primary);
+  letter-spacing: -0.03em; /* Tighter letter spacing for modern look */
+}
+
+h1 { font-weight: 200; font-size: 4.5rem; } /* Extremely thin, large headings */
+h2 { font-weight: 300; font-size: 3rem; }
+h3 { font-weight: 300; }
+h4 { font-weight: 400; }
+h5 { font-weight: 500; }
+
+.section-padding {
+  padding: 120px 0;
+}
+
+/* Glassmorphism Card */
+.card-custom {
+  background: var(--bg-card);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: var(--glass-border);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  border-radius: 24px; /* More rounded */
+  transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  overflow: hidden;
+}
+
+.card-custom:hover {
+  transform: translateY(-10px) scale(1.01);
+  background: var(--bg-card-hover);
+  box-shadow: var(--glass-shadow);
+  border-color: rgba(244, 114, 182, 0.3);
+}
+
+.card-custom h1, .card-custom h2, .card-custom h3, .card-custom h4, .card-custom h5, .card-title {
+    color: #ffffff !important;
+    font-weight: 300 !important;
+}
+
+.card-custom p {
+    color: var(--text-secondary);
+    font-weight: 300;
+}
+
+/* Typography Overrides */
+.text-secondary {
+  color: var(--text-secondary) !important;
+  font-weight: 300;
+}
+
+.text-muted {
+  color: #c0a0e0 !important; /* Muted purple */
+  font-weight: 300;
+}
+
+.text-accent {
+  background: var(--primary-gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+}
+
+/* Navigation */
+.navbar {
+    backdrop-filter: blur(20px);
+    background-color: rgba(5, 0, 10, 0.7) !important;
+    border-bottom: 1px solid rgba(255,255,255,0.03);
+}
+
+.nav-link {
+    font-family: var(--font-heading);
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    color: var(--text-secondary) !important;
+    transition: all 0.4s ease;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: #fff !important;
+    text-shadow: 0 0 15px rgba(236, 72, 153, 0.6);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+    background: var(--primary-gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Sexy Buttons */
+.btn-info {
+    background: var(--primary-gradient);
+    border: none;
+    color: white !important;
+    font-weight: 500;
+    padding: 14px 36px;
+    border-radius: 100px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    box-shadow: 0 10px 30px rgba(236, 72, 153, 0.4);
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-info:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 20px 40px rgba(236, 72, 153, 0.6);
+}
+
+.btn-outline-info {
+    background: transparent;
+    border: 1px solid rgba(255,255,255,0.2);
+    color: #fff;
+    font-weight: 500;
+    padding: 14px 36px;
+    border-radius: 100px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    transition: all 0.4s ease;
+    backdrop-filter: blur(5px);
+}
+
+.btn-outline-info:hover {
+    background: rgba(255,255,255,0.1);
+    border-color: #fff;
+    box-shadow: 0 0 30px rgba(255,255,255,0.2);
+}
+
+/* Section Line */
+.section-line {
+    height: 1px;
+    width: 100px; /* Longer, thinner line */
+    background: var(--primary-gradient);
+    margin: 20px auto;
+    opacity: 0.7;
+}
+
+/* Form Styles */
+.form-control {
+    background-color: rgba(255,255,255,0.03) !important;
+    border: 1px solid rgba(255,255,255,0.05) !important;
+    color: #fff !important;
+    border-radius: 16px;
+    padding: 16px 20px;
+    font-weight: 300;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    background-color: rgba(255,255,255,0.05) !important;
+    border-color: rgba(236, 72, 153, 0.5) !important;
+    box-shadow: 0 0 0 4px rgba(236, 72, 153, 0.1) !important;
+}
+
+.form-control::placeholder {
+    color: rgba(233, 213, 255, 0.5) !important;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(30px) scale(0.95); }
+    to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+section {
+    animation: fadeIn 1s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+}
+
+/* Timeline */
+.timeline-item {
+    border-left: 1px solid rgba(236, 72, 153, 0.3);
+}
+
+/* Profile Image */
+.profile-img-container {
+    position: relative;
+    width: 350px; /* Even larger */
+    height: 350px;
+    margin: 0 auto;
+    border-radius: 50%;
+    padding: 4px; 
+    background: var(--primary-gradient);
+    box-shadow: 0 0 60px rgba(236, 72, 153, 0.4); /* Stronger glow */
+    animation: float 6s ease-in-out infinite;
+}
+
+.profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid var(--bg-body); 
+    filter: grayscale(20%) contrast(1.1); /* Slight filter for mood */
+}
+
+@keyframes float {
+    0% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-20px) rotate(2deg); }
+    100% { transform: translateY(0px) rotate(0deg); }
+}
+
+@media (max-width: 768px) {
+    h1 { font-size: 3rem; }
+    .profile-img-container {
+        width: 250px;
+        height: 250px;
+        margin-bottom: 3rem;
+    }
+}
