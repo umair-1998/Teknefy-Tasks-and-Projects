@@ -44,7 +44,7 @@ body {
   width: 64px;
   height: 64px;
   border-radius: 50%;
-  background: linear-gradient(135deg,#ff9a9e,#fad0c4);
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
 }
 
 .stats {
@@ -99,11 +99,12 @@ body {
   width: 54px;
   height: 54px;
   border-radius: 50%;
-  background: linear-gradient(135deg,#fbc2eb,#a6c1ee);
+  background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
 }
 
 /* GRID */
-.grid, .explore {
+.grid,
+.explore {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 3px;
@@ -111,8 +112,9 @@ body {
   flex: 1;
 }
 
-.grid div, .explore div {
-  background: linear-gradient(135deg,#ff9a9e,#fad0c4);
+.grid div,
+.explore div {
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
 }
 
 /* POST */
@@ -120,7 +122,7 @@ body {
   height: 260px;
   margin: 0 14px;
   border-radius: 10px;
-  background: linear-gradient(135deg,#ff9a9e,#fad0c4);
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
 }
 
 /* POST ACTIONS */
